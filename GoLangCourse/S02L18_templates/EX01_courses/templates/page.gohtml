@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+  <div>Hello, World!</div>
+  <div>This is what you will be studying these years</div>
+  {{range .Years}}
+  {{template "year" .}}
+  {{end}}
+</body>
+
+</html>

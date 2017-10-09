@@ -1,0 +1,11 @@
+{{define "semester"}}
+<div style="border: 1px thin grey">
+  <h4>Semester {{.Name}}</h4>
+  <span>Courses list:</span>
+  <ol>
+    {{range .Courses}}
+    <li>{{.Number}} - {{.Name}} - {{.Grade}}</li>
+    {{end}}
+  </ol>
+</div>
+{{end}}

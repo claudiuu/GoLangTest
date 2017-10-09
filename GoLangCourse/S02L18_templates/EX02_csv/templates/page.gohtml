@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+  <div>Hello, World!</div>
+  <table>
+    <thead>
+      <th>Date</th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Adjust Close</th>
+    </thead>
+    <tbody>
+      {{range .}}
+      <tr>
+        {{range .}}
+        <td>{{.}}</td>
+        {{end}}
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+</body>
+
+</html>

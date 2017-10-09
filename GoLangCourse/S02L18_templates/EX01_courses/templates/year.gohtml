@@ -1,0 +1,6 @@
+{{define "year"}}
+<h2>Academic Year: {{.TheYear}}</h2>
+  {{range .Semesters}}
+  {{template "semester" .}}
+  {{end}}
+{{end}}

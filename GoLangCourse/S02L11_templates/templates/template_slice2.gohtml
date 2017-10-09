@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+  <div>Hello, World!</div>
+  <ul>
+    {{range $index, $el := .}}
+    <li>{{$index}} - {{$el}}</li>
+    {{end}}
+  </ul>
+</body>
+
+</html>
