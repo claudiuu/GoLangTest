@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index</title>
+</head>
+<body>
+  This is the index file
+  <br/>
+
+  {{if .}}
+  Hello, {{.FirstName}}! To update your account go to <a href="/account" title="Click to access your account">My Account</a>
+  <a href="/logout" title="Click to logout">Log out</a>
+  {{else}}
+  You are not logged in. <a href="/signup" title="Click to signup">Signup</a> or
+  <a href="/login" title="Click to login">Log in</a>
+
+  {{end}}
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Account</title>
+</head>
+<body>
+  This is the My Account file
+  <br/>
+  {{if .}}
+  Hello, {{.FirstName}}! Here you can update your account <br>
+  <a href="/logout" title="Click to logout">Log out</a>
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <td>{{.FirstName}}</td>
+    </tr>
+    <tr>
+      <th>Lastname</th>
+      <td>{{.LastName}}</td>
+    </tr>
+    <tr>
+      <th>Username</th>
+      <td>{{.Username}}</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>{{.Email}}</td>
+    </tr>
+  </table>
+  {{else}}
+  You are not logged in. <a href="/signup" title="Click to signup">Signup</a>
+  <a href="/login" title="Click to login">Log in</a>
+  {{end}}
+</body>
+</html>

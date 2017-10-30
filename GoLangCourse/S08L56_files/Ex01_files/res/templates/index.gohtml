@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload files</title>
+</head>
+<body>
+  <form method="post" enctype="multipart/form-data" >
+    <input type="file" name="theFile" />
+    <input type="submit" name="btSubmit" />
+  </form>
+  <br>
+  Content of file:
+  {{if .}}
+  <p>{{.}}</p>
+  {{else}}
+  n/a
+  {{end}}
+</body>
+</html>

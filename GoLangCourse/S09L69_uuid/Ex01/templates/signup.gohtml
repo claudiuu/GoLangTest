@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+</head>
+<body>
+  This is the signup file
+  {{if .}}
+  Hello, {{.FirstName}}! You are already logged in with username {{.Username}}
+  <a href="/logout" title="Click to logout">Log out</a>
+  {{else}}
+  <form action="/signup" method="post" >
+    <table>
+      <tr>
+        <th>First Name:</th>
+        <td><input type="text" name="fname"/></td>
+      </tr>
+      <tr>
+        <th>Last Name:</th>
+        <td><input type="text" name="lname" /></td>
+      </tr>
+      <tr>
+        <th>Username:</th>
+        <td><input type="text" name="username" /></td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td><input type="email" name="email" /></td>
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td><input type="password" name="pwd" /></td>
+      </tr>
+    </table>
+    <input type="submit" name="submit" value="Signup" />
+  </form>
+  {{end}}
+</body>
+</html>
